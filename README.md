@@ -12,7 +12,7 @@ add this buildpack to your `.buildpacks` file.
 $ echo 'https://github.com/schneems/pigz_buildpack' >> .buildpacks
 ```
 
-Then whatever buildpack you normally use (like heroku)
+Then whatever buildpack you normally use (like heroku ruby)
 
 ```
 $ echo 'https://github.com/heroku/heroku-buildpack-ruby' >> .buildpacks
