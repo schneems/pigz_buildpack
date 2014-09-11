@@ -1,0 +1,33 @@
+## PIGz Buildpack
+
+Installs parallel gzip binary http://zlib.net/pigz/ into your heroku app
+
+## Use
+
+Set up multibuildpack https://github.com/ddollar/heroku-buildpack-multi.
+
+add this buildpack to your `.buildpacks` file.
+
+```
+$ echo 'https://github.com/schneems/pigz_buildpack' > .buildpacks
+```
+
+Then deploy
+
+## Verify
+
+Use
+
+```
+$ heroku run bash
+```
+
+Then in the shell, run
+
+```
+$ pigz --help
+```
+
+## License
+
+MIT

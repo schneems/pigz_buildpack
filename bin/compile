@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# bin/compile <build-dir> <cache-dir>
+
+echo "-----> Installing pigz like a boss"
+mkdir -p $1/vendor/bin
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+cp $DIR/../vendor/bin/pigz $1/vendor/bin/pigz

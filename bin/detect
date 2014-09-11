@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo 'pigz'
+exit 0
