@@ -7,7 +7,7 @@ mkdir -p $1/vendor/pig_bin
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # copy binary
-cp $DIR/../vendor/bin/pigz $1/vendor/pig_bin/pigz
+cp $DIR/../vendor/pig_bin/pigz $1/vendor/pig_bin/pigz
 
 # set the path on startup
 mkdir -p $1/.profile.d
