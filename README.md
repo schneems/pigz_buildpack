@@ -9,8 +9,15 @@ Set up multibuildpack https://github.com/ddollar/heroku-buildpack-multi.
 add this buildpack to your `.buildpacks` file.
 
 ```
-$ echo 'https://github.com/schneems/pigz_buildpack' > .buildpacks
+$ echo 'https://github.com/schneems/pigz_buildpack' >> .buildpacks
 ```
+
+Then whatever buildpack you normally use (like heroku)
+
+```
+$ echo 'https://github.com/heroku/heroku-buildpack-ruby' >> .buildpacks
+```
+
 
 Then deploy
 

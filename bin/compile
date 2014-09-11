@@ -3,8 +3,13 @@
 # bin/compile <build-dir> <cache-dir>
 
 echo "-----> Installing pigz like a boss"
-mkdir -p $1/vendor/bin
+mkdir -p $1/vendor/pig_bin
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-cp $DIR/../vendor/bin/pigz $1/vendor/bin/pigz
+# copy binary
+cp $DIR/../vendor/bin/pigz $1/vendor/pig_bin/pigz
+
+# set the path on startup
+mkdir -p .profile.d
+echo 'export PATH=$PATH:$HOME/vendor/pig_bin' > .profile.d/pigz.sh
