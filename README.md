@@ -1,4 +1,5 @@
 ## PIGz Buildpack
+[![Help Contribute to Open Source](https://www.codetriage.com/schneems/pigz_buildpack/badges/users.svg)](https://www.codetriage.com/schneems/pigz_buildpack)
 
 Installs parallel gzip binary http://zlib.net/pigz/ into your heroku app
 
